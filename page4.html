@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Main Page</title>
+        <meta name="description" content="Mastermind Game">
+		<meta name="designer" content="Amirali Tolooei">
+        <meta name="keywords" content="Mastermind, Mastermind Game, Hasbro Mastermind, Hasbro Game, Online Mastermind, ">
+
+	</head>
+
+	<body>
+        <div class="fade"></div>
+
+        <div id="target"><div>
+            YOU WON!<br><br><br><br><br><br><br><br><br><br><br>
+
+            As a droid, R2D2 is programmed to help his master, however, R2D2 tends to do better than the average droid. Throughout his journeys with master Luke, R2D2 has been a great help no matter what. This time, our brave droid has hacked into the tough Imperial colour code! Although it was difficult, R2D2 can overcome any challenges that pose a threat to the rebellion. As R2D2 dashed through the middle of a fight to get to the code, there were many close calls where R2D2 was almost riddled with holes, however, R2D2 overcame that and reached the terminal in time to disable it. Good Job R2D2! <br>
+            <a href="page1.html">Back</a>
+        </div></div>
+
+    </body>
+    <style>
+        #target{
+            position:absolute;
+            top:-5500px;
+            bottom:0;
+            left:0;
+            right:0;
+            overflow:hidden;
+            font-size:100px;
+            text-align:center;
+            font-family:sans-serif;
+        }
+        #target>div{
+            padding-top:6500px;
+            animation:autoscroll 1000s linear;
+        }
+        html:after{
+            content:'';
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            background:linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0) 100%);
+            background:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0) 100%);
+            pointer-events:none;
+        }
+
+        body{ 
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            transform-origin:50% 100%;
+            transform:perspective(300px) rotateX(13deg);
+        }
+        html{
+            color:yellow;
+            background:black;
+        }
+        @keyframes autoscroll{
+            to{
+                margin-top:-60000px;
+            }    
+        }
+    </style>
+
+</html>
